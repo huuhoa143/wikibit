@@ -1,0 +1,20 @@
+{
+  "name": "wikibit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "crypto-random-string": "^3.3.1",
+    "ethers": "^5.0.31",
+    "randexp": "^0.5.3",
+    "random-ipv4": "^1.0.2",
+    "random-useragent": "^0.5.0"
+  }
+}
