@@ -35,7 +35,10 @@ const getOTP = (phone, orderID) => {
 
 setImmediate(async () => {
 
-    for (let i = 0; i < 1; i++) {
+    const total = 20
+    const ref = 'lafXwNFnYk'
+
+    for (let i = 0; i < total; i++) {
         const ipHeader = randomIPHeader()
         const ethWallet = randomEtherWallet()
 
@@ -67,11 +70,11 @@ setImmediate(async () => {
 
         const otp = await getOTP(phone, orderID)
         console.log({ otp })
-        response = await ValidateCode(ipHeader, phone, ethWallet, otp, 'lafXwNFnYk')
+        response = await ValidateCode(ipHeader, phone, ethWallet, otp, ref)
 
         console.log({response})
 
-        require('fs').appendFileSync('./data/accounts.txt', `${phone}\n`, () => { })
+        require('fs').appendFileSync('./accounts.txt', `${phone}\n`, () => { })
 
     }
 })
